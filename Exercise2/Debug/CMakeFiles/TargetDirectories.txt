@@ -1,0 +1,3 @@
+C:/Users/adria/Desktop/PCS_Esercitazioni/Esercitazione_1_IO/Exercise2/Debug/CMakeFiles/MeanValue.dir
+C:/Users/adria/Desktop/PCS_Esercitazioni/Esercitazione_1_IO/Exercise2/Debug/CMakeFiles/edit_cache.dir
+C:/Users/adria/Desktop/PCS_Esercitazioni/Esercitazione_1_IO/Exercise2/Debug/CMakeFiles/rebuild_cache.dir
