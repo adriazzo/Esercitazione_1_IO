@@ -38,7 +38,6 @@ int main()
 
     int a1 = a + d;
     std::string s1 = s + " " + std::to_string(a1); // to sum two strings means concatenation
-
     std::cout << "a1 = " << a1 << std::endl;
     std::cout << "s1 = " << s1 << std::endl;
 
@@ -47,7 +46,7 @@ int main()
     std::cout << "size of bool: " << sizeof(bool) << std::endl;
     std::cout << "size of int: " << sizeof(int) << std::endl;
     std::cout << "size of unsigned int: " << sizeof(unsigned int) << std::endl;
-
+    std::cout << "size of double: " << sizeof(double) << std::endl;
 
     std::cout << std::fixed << std::setprecision(0) << "interval of values of int: [" << std::numeric_limits<int>::min() << ","
               << std::numeric_limits<int>::max() << "]" << std::endl;
@@ -65,9 +64,9 @@ int main()
 
     // Read operations
 
-//    int val = 0;
-//    std::cin >> val;
-//    std::cout << "val = " << val << std::endl;
+   // int val = 0;
+   // std::cin >> val;
+   // std::cout << "val = " << val << std::endl;
 
 //    // By default, cin ignores any leading whitespace (e.g. spaces, newline, tabs,...)
 //    int val1 = 0, val2 = 0, val3 = 0;
@@ -95,6 +94,7 @@ int main()
     std::cout << "str1: " << str1 << std::endl;
 
     double d1, d2;
+    std::cout << d2 << std::endl;
     istrm >> d1 >> d2;
     std::cout << "1. d1 + d2 = " << d1 + d2 << std::endl;
 

@@ -1,6 +1,8 @@
 #include <iostream>
 #include <fstream>
 
+using namespace std;
+
 unsigned int sumFirstNSquare(unsigned int N)
 {
     return N * (N + 1) * (2 * N + 1) / 6;
@@ -9,12 +11,12 @@ unsigned int sumFirstNSquare(unsigned int N)
 int main()
 {
 
-    std::string fileName = "data.csv"; // file name
-    std::ifstream ifstr(fileName); // create istream object and open file
+    string fileName = "data.csv"; // file name
+    ifstream ifstr(fileName); // create istream object and open file
 
     if(ifstr.fail())
     {
-        std::cerr << "File does not exist" << std::endl;
+        cerr << "File does not exist" << endl;
         return 1;
     }
 
@@ -22,7 +24,7 @@ int main()
     unsigned int sumSquare = 0;
     unsigned int countVal = 0;
 
-    std::string header;
+    string header;
     ifstr >> header; // ignore header of the file
 
     while(ifstr >> val)
@@ -37,13 +39,13 @@ int main()
 
     if(ss != sumSquare)
     {
-        std::cerr << "Something is wrong" << std::endl;
+        cerr << "Something is wrong" << endl;
         return 2;
     }
 
 
-    std::cout << "The sum of square of the first N = " << countVal << " values is: " << sumSquare <<
-        ". This sum is equal to: N * (N + 1) * (2 * N + 1) / 6, i.e. " << ss << std::endl;
+    cout << "The sum of square of the first N = " << countVal << " values is: " << sumSquare <<
+        ". This sum is equal to: N * (N + 1) * (2 * N + 1) / 6, i.e. " << ss << endl;
 
     return 0;
 }
